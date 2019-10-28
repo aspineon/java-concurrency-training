@@ -1,4 +1,4 @@
-package pl.training.concurrency.chat.v1;
+package pl.training.concurrency.chat.v2;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -42,6 +42,11 @@ class MessageReader {
             logger.log(Level.SEVERE, "Read message failed - " + ex.getMessage());
         }
         finally {
+            try {
+                reader.close();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
             if (onClose != null) {
                 onClose.run();
             }
