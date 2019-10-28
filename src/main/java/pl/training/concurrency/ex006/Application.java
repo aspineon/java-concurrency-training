@@ -11,11 +11,11 @@ public class Application {
     public static void main(String[] args) {
 
         for (int threadIndex = 0; threadIndex < THREADS_COUNT; threadIndex++) {
-            new Thread(Application::doSomething).start();
+            new Thread(Application::work).start();
         }
     }
 
-    private static void doSomething() {
+    private static void work() {
         Random random = new Random();
         while (true) {
             if (random.nextBoolean()) {

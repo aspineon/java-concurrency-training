@@ -1,41 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="893ad1c1-5905-4e40-b6fc-3dddabd543de" name="Default Changelist" comment="Initial project">
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/training/concurrency/ex005/Application.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/training/concurrency/ex005/Employee.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/training/concurrency/ex005/Printer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/training/concurrency/ex006/Application.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/training/concurrency/ex006/KeyValueStore.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/training/concurrency/ex007/Application.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/training/concurrency/ex007/Counter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/training/concurrency/ex008/Application.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/training/concurrency/ex008/Sum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/training/concurrency/ex009/Application.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/training/concurrency/ex009/Power.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/training/concurrency/ex009/Sum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/META-INF/concurrency.kotlin_module" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/pl/training/concurrency/ex001/Application.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/pl/training/concurrency/ex001/PrintTime.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/pl/training/concurrency/ex001/PrintTimeThread.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/pl/training/concurrency/ex002/Application.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/pl/training/concurrency/ex002/Sum.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/pl/training/concurrency/ex003/Application.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/pl/training/concurrency/ex003/BeforeShutdownInfo.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/pl/training/concurrency/ex003/Processor.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/pl/training/concurrency/ex004/Application.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/pl/training/concurrency/ex004/Employee.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/pl/training/concurrency/ex004/Printer.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/pl/training/concurrency/ex005/Application.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/pl/training/concurrency/ex005/Employee.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/pl/training/concurrency/ex005/Printer.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/pl/training/concurrency/ex006/Application.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/pl/training/concurrency/ex006/KeyValueStore.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/pl/training/concurrency/ex007/Application.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/pl/training/concurrency/ex007/Counter.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/pl/training/concurrency/ex008/Application.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/pl/training/concurrency/ex008/Sum.class" afterDir="false" />
+    <list default="true" id="893ad1c1-5905-4e40-b6fc-3dddabd543de" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/training/concurrency/chat/v1/ChatClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/training/concurrency/chat/v1/ChatServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/training/concurrency/chat/v1/MessageReader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/training/concurrency/chat/v1/MessageWriter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/training/concurrency/chat/v1/Worker.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/training/concurrency/chat/v1/Workers.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/training/concurrency/ex006/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/training/concurrency/ex006/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pl/training/concurrency/ex006/Application.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/training/concurrency/ex006/Application.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -77,7 +52,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/pl/training/concurrency/ex005" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/pl/training/concurrency/chat/v1" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
@@ -87,6 +62,7 @@
       <recent name="pl.training.concurrency.ex003" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java/pl/training/concurrency/chat/v1" />
       <recent name="$PROJECT_DIR$/src/main/java/pl/training/concurrency/ex005" />
       <recent name="$PROJECT_DIR$/src/main/java/pl/training/concurrency/ex004" />
     </key>
@@ -103,39 +79,27 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Application (1)">
+  <component name="RunManager" selected="Application.Marcin">
+    <configuration name="Adam" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="pl.training.concurrency.chat.v1.ChatClient" />
+      <module name="concurrency" />
+      <option name="PROGRAM_PARAMETERS" value="localhost 1234 Adam" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pl.training.concurrency.chat.v1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Application (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="pl.training.concurrency.ex009.Application" />
       <module name="concurrency" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="pl.training.concurrency.ex009.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Application (3)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="pl.training.concurrency.ex005.Application" />
-      <module name="concurrency" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="pl.training.concurrency.ex005.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Application (4)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="pl.training.concurrency.ex006.Application" />
-      <module name="concurrency" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="pl.training.concurrency.ex006.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -169,13 +133,43 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ChatServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="pl.training.concurrency.chat.v1.ChatServer" />
+      <module name="concurrency" />
+      <option name="PROGRAM_PARAMETERS" value="1234" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pl.training.concurrency.chat.v1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Marcin" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="pl.training.concurrency.chat.v1.ChatClient" />
+      <module name="concurrency" />
+      <option name="PROGRAM_PARAMETERS" value="localhost 1234 Marcin" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.Marcin" />
+      <item itemvalue="Application.Application" />
+      <item itemvalue="Application.Application (1)" />
+      <item itemvalue="Application.Application (5)" />
+      <item itemvalue="Application.Adam" />
+      <item itemvalue="Application.ChatServer" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Adam" />
+        <item itemvalue="Application.ChatServer" />
         <item itemvalue="Application.Application (1)" />
         <item itemvalue="Application.Application" />
         <item itemvalue="Application.Application (5)" />
-        <item itemvalue="Application.Application (4)" />
-        <item itemvalue="Application.Application (3)" />
       </list>
     </recent_temporary>
   </component>
@@ -186,7 +180,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1572252124098</updated>
-      <workItem from="1572252125541" duration="12277000" />
+      <workItem from="1572252125541" duration="14646000" />
     </task>
     <task id="LOCAL-00001" summary="Initial project">
       <created>1572252222557</created>
@@ -209,7 +203,14 @@
       <option name="project" value="LOCAL" />
       <updated>1572260189134</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Initial project">
+      <created>1572270332586</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1572270332586</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
