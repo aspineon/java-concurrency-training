@@ -2,20 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="893ad1c1-5905-4e40-b6fc-3dddabd543de" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/training/concurrency/ex001/Application.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/training/concurrency/ex001/PrintTime.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/training/concurrency/ex001/PrintTimeThread.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/training/concurrency/ex002/Application.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/training/concurrency/ex002/Sum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/training/concurrency/ex003/Application.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/training/concurrency/ex003/BeforeShutdownInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/training/concurrency/ex003/Processor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/training/concurrency/ex004/Application.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/training/concurrency/ex004/Employee.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/training/concurrency/ex004/PrintDocument.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/training/concurrency/ex004/Printer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/training/concurrency/ex004/PrintDocument.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/training/concurrency/ex004/Printer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/training/concurrency/ex004/Printer.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -149,7 +137,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1572252124098</updated>
-      <workItem from="1572252125541" duration="5121000" />
+      <workItem from="1572252125541" duration="5371000" />
     </task>
     <task id="LOCAL-00001" summary="Initial project">
       <created>1572252222557</created>
@@ -158,7 +146,14 @@
       <option name="project" value="LOCAL" />
       <updated>1572252222557</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Initial project">
+      <created>1572259856067</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1572259856067</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

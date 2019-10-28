@@ -6,11 +6,11 @@ import java.util.Random;
 public class Employee implements Runnable {
 
     private static final int MAX_SLEEP_TIME = 300;
-    private final Queue<PrintDocument> printingQueue;
+    private final Queue<String> printingQueue;
     private final int tasksLimit;
     private final Random random = new Random();
 
-    public Employee(Queue<PrintDocument> printingQueue, int tasksLimit) {
+    public Employee(Queue<String> printingQueue, int tasksLimit) {
         this.printingQueue = printingQueue;
         this.tasksLimit = tasksLimit;
     }
@@ -20,19 +20,19 @@ public class Employee implements Runnable {
         while (true) {
             synchronized (printingQueue) {
                 waitIfQueueIsFull();
-                createTask();
+                addDocument();
             }
         }
     }
 
-    private void createTask() {
+    private void addDocument() {
         try {
             Thread.sleep(random.nextInt(MAX_SLEEP_TIME));
         } catch (InterruptedException e) {
             System.out.println("Employee was interrupted...");
         }
         System.out.println("Creating new task...");
-        printingQueue.add(new PrintDocument());
+        printingQueue.add("Document");
         printingQueue.notify();
     }
 

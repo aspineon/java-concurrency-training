@@ -1,13 +1,17 @@
 package pl.training.concurrency.ex004;
 
-import java.util.Optional;
 import java.util.Queue;
+import java.util.Random;
+import java.util.UUID;
 
 public class Printer implements Runnable {
 
-    private final Queue<PrintDocument> printingQueue;
+    private static final int MAX_SLEEP_TIME = 200;
 
-    public Printer(Queue<PrintDocument> printingQueue) {
+    private final Queue<String> printingQueue;
+    private final Random random = new Random();
+
+    public Printer(Queue<String> printingQueue) {
         this.printingQueue = printingQueue;
     }
 
@@ -16,13 +20,19 @@ public class Printer implements Runnable {
         while (true) {
             synchronized (printingQueue) {
                 waitIfQueueIsEmpty();
-                print();
+                printDocument();
             }
         }
     }
 
-    private void print() {
-        Optional.ofNullable(printingQueue.poll()).ifPresent(PrintDocument::execute);
+    private void printDocument() {
+        try {
+            Thread.sleep(random.nextInt(MAX_SLEEP_TIME));
+        } catch (InterruptedException e) {
+            System.out.println("Printing was interrupted...");
+        }
+        System.out.printf("Printing (task id: %s)\n", UUID.randomUUID());
+        printingQueue.poll();
         printingQueue.notifyAll();
     }
 
