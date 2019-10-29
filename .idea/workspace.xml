@@ -2,18 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="893ad1c1-5905-4e40-b6fc-3dddabd543de" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/training/concurrency/ex010/Application.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/training/concurrency/ex010/PrintingQueue.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/training/concurrency/ex011/Application.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/training/concurrency/ex011/Meeting.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/training/concurrency/ex012/Application.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/training/concurrency/ex012/Service.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/training/concurrency/ex013/Application.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/training/concurrency/ex013/Search.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/training/concurrency/ex014/Application.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/training/concurrency/ex014/Consumer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/training/concurrency/ex014/Producer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/training/concurrency/cache/Application.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/training/concurrency/cache/Cache.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/training/concurrency/cache/Index.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/training/concurrency/cache/LinkedHashMapCache.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/training/concurrency/chat/v3/ChatServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/training/concurrency/chat/v3/Connection.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/training/concurrency/chat/v3/Connections.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/training/concurrency/chat/v3/ObservableInputStream.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/training/concurrency/chat/v3/ObservableServerSocket.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/training/concurrency/chat/v3/ObservableSocket.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/training/concurrency/ex015/Application.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/training/concurrency/ex015/Power.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/training/concurrency/ex015/Sum.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/training/concurrency/ex013/Search.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/training/concurrency/ex013/Search.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -64,11 +68,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="pl.training.concurrency.chat.v3" />
+      <recent name="pl.training.concurrency.ex015" />
       <recent name="pl.training.concurrency.ex014" />
       <recent name="pl.training.concurrency.ex012" />
       <recent name="pl.training.concurrency.ex011" />
-      <recent name="pl.training.concurrency.ex009" />
-      <recent name="pl.training.concurrency.ex008" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/java/pl/training/concurrency/chat/v2" />
@@ -89,33 +93,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Application (4)">
-    <configuration name="Application (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="pl.training.concurrency.ex011.Application" />
-      <module name="concurrency" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="pl.training.concurrency.ex011.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Application (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="pl.training.concurrency.ex012.Application" />
-      <module name="concurrency" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="pl.training.concurrency.ex012.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.Marcin">
     <configuration name="Application (3)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="pl.training.concurrency.ex013.Application" />
       <module name="concurrency" />
@@ -142,12 +120,39 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="pl.training.concurrency.ex010.Application" />
+    <configuration name="Application (5)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="pl.training.concurrency.cache.Application" />
       <module name="concurrency" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="pl.training.concurrency.ex010.*" />
+          <option name="PATTERN" value="pl.training.concurrency.cache.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="pl.training.concurrency.ex015.Application" />
+      <module name="concurrency" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pl.training.concurrency.ex015.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ChatServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="pl.training.concurrency.chat.v3.ChatServer" />
+      <module name="concurrency" />
+      <option name="PROGRAM_PARAMETERS" value="1234" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pl.training.concurrency.chat.v3.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -174,19 +179,19 @@
     <list>
       <item itemvalue="Application.Marcin" />
       <item itemvalue="Application.Unnamed" />
-      <item itemvalue="Application.Application" />
-      <item itemvalue="Application.Application (1)" />
-      <item itemvalue="Application.Application (2)" />
       <item itemvalue="Application.Application (3)" />
       <item itemvalue="Application.Application (4)" />
+      <item itemvalue="Application.Application (5)" />
+      <item itemvalue="Application.Application" />
+      <item itemvalue="Application.ChatServer" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Application (4)" />
-        <item itemvalue="Application.Application (3)" />
-        <item itemvalue="Application.Application (2)" />
-        <item itemvalue="Application.Application (1)" />
+        <item itemvalue="Application.ChatServer" />
         <item itemvalue="Application.Application" />
+        <item itemvalue="Application.Application (5)" />
+        <item itemvalue="Application.Application (3)" />
+        <item itemvalue="Application.Application (4)" />
       </list>
     </recent_temporary>
   </component>
@@ -198,7 +203,7 @@
       <option name="presentableId" value="Default" />
       <updated>1572252124098</updated>
       <workItem from="1572252125541" duration="20178000" />
-      <workItem from="1572329584987" duration="9923000" />
+      <workItem from="1572329584987" duration="23077000" />
     </task>
     <task id="LOCAL-00001" summary="Initial project">
       <created>1572252222557</created>
@@ -249,7 +254,14 @@
       <option name="project" value="LOCAL" />
       <updated>1572330095120</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Refactorings">
+      <created>1572344760299</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1572344760299</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
