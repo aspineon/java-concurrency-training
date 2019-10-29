@@ -2,37 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="893ad1c1-5905-4e40-b6fc-3dddabd543de" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/training/concurrency/chat/v2/ChatClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/training/concurrency/chat/v2/ChatServer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/training/concurrency/chat/v2/GlobalExceptionHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/training/concurrency/chat/v2/MessageReader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/training/concurrency/chat/v2/MessageWriter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/training/concurrency/chat/v2/Worker.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/training/concurrency/chat/v2/Workers.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/training/concurrency/chat/v1/MessageReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/training/concurrency/chat/v1/MessageReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/concurrency.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pl/training/concurrency/ex001/Application.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/training/concurrency/ex001/Application.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pl/training/concurrency/ex001/PrintTime.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/training/concurrency/ex001/PrintTime.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pl/training/concurrency/ex001/PrintTimeThread.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/training/concurrency/ex001/PrintTimeThread.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pl/training/concurrency/ex002/Application.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/training/concurrency/ex002/Application.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pl/training/concurrency/ex002/Sum.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/training/concurrency/ex002/Sum.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pl/training/concurrency/ex003/Application.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/training/concurrency/ex003/Application.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pl/training/concurrency/ex003/BeforeShutdownInfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/training/concurrency/ex003/BeforeShutdownInfo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pl/training/concurrency/ex003/Processor.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/training/concurrency/ex003/Processor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pl/training/concurrency/ex004/Application.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/training/concurrency/ex004/Application.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pl/training/concurrency/ex004/Employee.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/training/concurrency/ex004/Employee.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pl/training/concurrency/ex004/Printer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/training/concurrency/ex004/Printer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pl/training/concurrency/ex005/Application.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/training/concurrency/ex005/Application.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pl/training/concurrency/ex005/Employee.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/training/concurrency/ex005/Employee.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pl/training/concurrency/ex005/Printer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/training/concurrency/ex005/Printer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pl/training/concurrency/ex006/Application.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/training/concurrency/ex006/Application.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pl/training/concurrency/ex006/KeyValueStore.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/training/concurrency/ex006/KeyValueStore.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pl/training/concurrency/ex007/Application.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/training/concurrency/ex007/Application.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pl/training/concurrency/ex007/Counter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/training/concurrency/ex007/Counter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pl/training/concurrency/ex008/Application.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/training/concurrency/ex008/Application.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pl/training/concurrency/ex008/Sum.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/training/concurrency/ex008/Sum.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/training/concurrency/chat/v2/Worker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/training/concurrency/chat/v2/Worker.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -217,7 +188,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1572252124098</updated>
-      <workItem from="1572252125541" duration="19913000" />
+      <workItem from="1572252125541" duration="20178000" />
+      <workItem from="1572329584987" duration="271000" />
     </task>
     <task id="LOCAL-00001" summary="Initial project">
       <created>1572252222557</created>
@@ -254,7 +226,14 @@
       <option name="project" value="LOCAL" />
       <updated>1572272936765</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Initial project">
+      <created>1572278364632</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1572278364632</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -265,7 +244,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
@@ -274,21 +255,5 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial project" />
     <option name="LAST_COMMIT_MESSAGE" value="Initial project" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/pl/training/concurrency/chat/v2/Worker.java</url>
-          <line>22</line>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/pl/training/concurrency/chat/v2/Worker.java</url>
-          <line>20</line>
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
