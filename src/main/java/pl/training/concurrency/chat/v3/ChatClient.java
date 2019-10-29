@@ -5,6 +5,7 @@ import io.reactivex.schedulers.Schedulers;
 
 import java.io.IOException;
 import java.net.Socket;
+import java.util.concurrent.TimeUnit;
 
 public class ChatClient {
 
@@ -19,6 +20,7 @@ public class ChatClient {
                 .subscribeOn(Schedulers.newThread())
                 .observeOn(Schedulers.newThread())
                 .map(message -> user + ": " + message)
+                .debounce(5, TimeUnit.SECONDS)
                 .subscribe(connection::send));
 
         compositeDisposable.add(ObservableReader.from(socket).subscribe(System.out::println));
