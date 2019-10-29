@@ -1,8 +1,6 @@
 package pl.training.concurrency.chat.v3;
 
-import io.reactivex.Observable;
 import io.reactivex.disposables.CompositeDisposable;
-import io.reactivex.disposables.Disposable;
 import io.reactivex.schedulers.Schedulers;
 
 import java.io.IOException;
@@ -21,18 +19,16 @@ public class ChatServer {
         Runtime.getRuntime().addShutdownHook(new Thread(compositeDisposable::dispose));
         try {
             ServerSocket serverSocket = new ServerSocket(port);
-            ObservableServerSocket observableServerSocket = new ObservableServerSocket(serverSocket);
             logger.log(Level.INFO, "Server is listening on port " + port);
-            compositeDisposable.add(Observable.create(observableServerSocket).subscribe(this::onNextSocket));
-        }  catch (IOException ex) {
+            compositeDisposable.add(ObservableSocket.from(serverSocket).subscribe(this::onNextSocket));
+        } catch (IOException ex) {
             logger.log(Level.SEVERE, "Server failed to start - " + ex.getMessage());
         }
     }
 
     private void onNextSocket(Socket socket) throws IOException {
         connections.add(new Connection(socket));
-        ObservableSocket observableSocket = new ObservableSocket(socket);
-        compositeDisposable.add(Observable.create(observableSocket)
+        compositeDisposable.add(ObservableReader.from(socket)
                 .observeOn(Schedulers.io())
                 .subscribeOn(Schedulers.newThread())
                 .subscribe(connections::broadcast));

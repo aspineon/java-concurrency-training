@@ -1,12 +1,19 @@
 package pl.training.concurrency.chat.v3;
 
-import java.io.IOException;
+import io.reactivex.Observable;
+
+import java.net.ServerSocket;
 import java.net.Socket;
 
-public class ObservableSocket extends ObservableInputStream {
+public class ObservableSocket {
 
-    public ObservableSocket(Socket socket) throws IOException {
-        super(socket.getInputStream());
+    static Observable<Socket> from(ServerSocket serverSocket) {
+        return Observable.create(emitter -> {
+            while (true) {
+                Socket socket = serverSocket.accept();
+                emitter.onNext(socket);
+            }
+        });
     }
 
 }

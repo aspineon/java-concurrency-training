@@ -2,22 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="893ad1c1-5905-4e40-b6fc-3dddabd543de" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/training/concurrency/cache/Application.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/training/concurrency/cache/Cache.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/training/concurrency/cache/Index.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/training/concurrency/cache/LinkedHashMapCache.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/training/concurrency/chat/v3/ChatServer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/training/concurrency/chat/v3/Connection.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/training/concurrency/chat/v3/Connections.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/training/concurrency/chat/v3/ObservableInputStream.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/training/concurrency/chat/v3/ObservableServerSocket.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/training/concurrency/chat/v3/ObservableSocket.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/training/concurrency/ex015/Application.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/training/concurrency/ex015/Power.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/training/concurrency/ex015/Sum.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/training/concurrency/ex013/Search.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/training/concurrency/ex013/Search.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/training/concurrency/chat/v3/ChatServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/training/concurrency/chat/v3/ChatServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/training/concurrency/chat/v3/ObservableInputStream.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/training/concurrency/chat/v3/ObservableReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/training/concurrency/chat/v3/ObservableServerSocket.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/training/concurrency/chat/v3/ObservableSocket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/training/concurrency/chat/v3/ObservableSocket.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -93,7 +82,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Marcin">
+  <component name="RunManager" selected="Application.ChatServer">
     <configuration name="Application (3)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="pl.training.concurrency.ex013.Application" />
       <module name="concurrency" />
@@ -203,7 +192,7 @@
       <option name="presentableId" value="Default" />
       <updated>1572252124098</updated>
       <workItem from="1572252125541" duration="20178000" />
-      <workItem from="1572329584987" duration="23077000" />
+      <workItem from="1572329584987" duration="24625000" />
     </task>
     <task id="LOCAL-00001" summary="Initial project">
       <created>1572252222557</created>
@@ -261,7 +250,14 @@
       <option name="project" value="LOCAL" />
       <updated>1572344760299</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Refactorings">
+      <created>1572361907010</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1572361907010</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
