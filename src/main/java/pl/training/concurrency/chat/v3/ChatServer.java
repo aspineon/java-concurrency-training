@@ -13,7 +13,7 @@ public class ChatServer {
 
     private final Logger logger = Logger.getLogger(getClass().getName());
     private final Connections connections = new Connections();
-    private CompositeDisposable compositeDisposable = new CompositeDisposable();
+    private final CompositeDisposable compositeDisposable = new CompositeDisposable();
 
     private void start(int port) {
         Runtime.getRuntime().addShutdownHook(new Thread(compositeDisposable::dispose));
