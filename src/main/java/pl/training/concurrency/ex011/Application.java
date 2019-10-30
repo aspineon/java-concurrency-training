@@ -1,14 +1,8 @@
 package pl.training.concurrency.ex011;
 
-import pl.training.concurrency.ex010.PrintingQueue;
-
-import java.util.UUID;
 import java.util.concurrent.CountDownLatch;
-import java.util.concurrent.Semaphore;
 
 public class Application {
-
-    private static final int THREADS_COUNT = 10;
 
     public static void main(String[] args) throws InterruptedException {
         CountDownLatch countDownLatch = new CountDownLatch(5);
