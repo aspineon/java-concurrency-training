@@ -1,4 +1,4 @@
-package pl.training.concurrency.search;
+package pl.training.concurrency.search.github;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.Data;

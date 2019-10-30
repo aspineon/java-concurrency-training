@@ -2,14 +2,20 @@ package pl.training.concurrency.search;
 
 import io.reactivex.Observable;
 import io.reactivex.disposables.CompositeDisposable;
+import io.reactivex.disposables.Disposable;
+import pl.training.concurrency.search.github.GithubService;
+import pl.training.concurrency.search.github.Repository;
 import retrofit2.Retrofit;
 import retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory;
 import retrofit2.converter.jackson.JacksonConverterFactory;
 
+import java.io.IOException;
 import java.util.List;
+import java.util.Scanner;
 
 public class Application {
 
+    private GithubService githubService;
     private CompositeDisposable compositeDisposable = new CompositeDisposable();
 
     private Retrofit createRetrofit() {
@@ -20,12 +26,25 @@ public class Application {
                 .build();
     }
 
+    private Observable<List<Repository>> getRepositories(String queryString) {
+        return githubService.getRepositoriesSummary(queryString);
+    }
+
     private void start() {
         Runtime.getRuntime().addShutdownHook(new Thread(compositeDisposable::dispose));
-        GithubService githubService = new GithubService(createRetrofit());
+        githubService = new GithubService(createRetrofit());
 
-        Observable<List<Repository>> repositories = githubService.getRepositoriesSummary("landrzejewski");
-        compositeDisposable.add(repositories.subscribe(System.out::println));
+
+        Observable<String> input = ObservableReader.from(System.in);
+
+        //Disposable disposable = input.map(this::getRepositories)
+        //        .subscribe(result -> compositeDisposable.add(result.subscribe(System.out::println)));
+
+        Disposable disposable = input.flatMap(this::getRepositories)
+                .subscribe(System.out::println);
+
+
+        compositeDisposable.add(disposable);
     }
 
     public static void main(String[] args) {

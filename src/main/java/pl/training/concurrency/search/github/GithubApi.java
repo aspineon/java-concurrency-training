@@ -1,4 +1,4 @@
-package pl.training.concurrency.search;
+package pl.training.concurrency.search.github;
 
 import io.reactivex.Observable;
 import retrofit2.http.GET;

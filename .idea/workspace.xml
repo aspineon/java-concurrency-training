@@ -2,12 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="893ad1c1-5905-4e40-b6fc-3dddabd543de" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/training/concurrency/ex009/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/training/concurrency/ex009/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/training/concurrency/ex009/Power.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/training/concurrency/ex009/Multiply.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/training/concurrency/ex015/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/training/concurrency/ex015/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/training/concurrency/ex015/Power.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/training/concurrency/ex015/Multiply.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/training/concurrency/search/ObservableReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pl/training/concurrency/search/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/training/concurrency/search/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/training/concurrency/search/GithubService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/training/concurrency/search/GithubService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/training/concurrency/search/GithubApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/training/concurrency/search/github/GithubApi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/training/concurrency/search/GithubService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/training/concurrency/search/github/GithubService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/training/concurrency/search/Repository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/training/concurrency/search/github/Repository.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -48,6 +48,11 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/test/java/pl/training/concurrency" />
@@ -58,11 +63,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="pl.training.concurrency.search" />
       <recent name="pl.training.concurrency.chat.v3" />
       <recent name="pl.training.concurrency.ex015" />
       <recent name="pl.training.concurrency.ex014" />
       <recent name="pl.training.concurrency.ex012" />
-      <recent name="pl.training.concurrency.ex011" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/test/java/pl/training/concurrency" />
@@ -90,7 +95,7 @@
       <module name="concurrency" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="pl.training.concurrency.search.*" />
+          <option name="PATTERN" value="pl.training.concurrency.search.github.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -219,7 +224,7 @@
       <workItem from="1572252125541" duration="20178000" />
       <workItem from="1572329584987" duration="26613000" />
       <workItem from="1572405524288" duration="1000" />
-      <workItem from="1572406472367" duration="13828000" />
+      <workItem from="1572406472367" duration="17267000" />
     </task>
     <task id="LOCAL-00001" summary="Initial project">
       <created>1572252222557</created>
@@ -319,7 +324,14 @@
       <option name="project" value="LOCAL" />
       <updated>1572435940873</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Refactorings">
+      <created>1572436256559</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1572436256559</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
