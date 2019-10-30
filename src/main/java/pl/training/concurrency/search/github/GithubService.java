@@ -7,7 +7,7 @@ import java.util.List;
 
 public class GithubService {
 
-    private GithubApi githubApi;
+    private final GithubApi githubApi;
 
     public GithubService(Retrofit retrofit) {
         githubApi = retrofit.create(GithubApi.class);
@@ -18,6 +18,7 @@ public class GithubService {
     }
 
     public Observable<List<Repository>> getRepositories(String query) {
+        System.out.println("Get repositories...");
         return githubApi.getRepositories(query)
                 .map(QueryResult::getItems);
     }
