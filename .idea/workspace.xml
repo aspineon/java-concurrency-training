@@ -3,7 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="893ad1c1-5905-4e40-b6fc-3dddabd543de" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/training/concurrency/chat/v3/ChatClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/training/concurrency/chat/v3/ChatClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/training/concurrency/chat/v3/ChatServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/training/concurrency/chat/v3/ChatServer.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -46,8 +47,8 @@
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="extract.method.default.visibility" value="private" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/pl/training/concurrency/chat/v2" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/test/java/pl/training/concurrency" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
@@ -79,7 +80,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Marek">
+  <component name="RunManager" selected="Application.Application">
     <configuration name="Application (3)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="pl.training.concurrency.ex013.Application" />
       <module name="concurrency" />
@@ -189,9 +190,9 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Application" />
         <item itemvalue="Application.Jan" />
         <item itemvalue="Application.ChatServer" />
-        <item itemvalue="Application.Application" />
         <item itemvalue="Application.Application (5)" />
         <item itemvalue="Application.Application (3)" />
       </list>
@@ -205,7 +206,9 @@
       <option name="presentableId" value="Default" />
       <updated>1572252124098</updated>
       <workItem from="1572252125541" duration="20178000" />
-      <workItem from="1572329584987" duration="26166000" />
+      <workItem from="1572329584987" duration="26613000" />
+      <workItem from="1572405524288" duration="1000" />
+      <workItem from="1572406472367" duration="3845000" />
     </task>
     <task id="LOCAL-00001" summary="Initial project">
       <created>1572252222557</created>
@@ -284,7 +287,14 @@
       <option name="project" value="LOCAL" />
       <updated>1572364330781</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Refactorings">
+      <created>1572364852434</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1572364852434</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
