@@ -10,6 +10,7 @@ import retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory;
 import retrofit2.converter.jackson.JacksonConverterFactory;
 
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
@@ -26,14 +27,13 @@ public class Application {
                 .build();
     }
 
-    private Observable<List<Repository>> getRepositories(String queryString) {
-        return githubService.getRepositoriesSummary(queryString);
+    private Observable<List<Repository>> getRepositories(String query) {
+        return githubService.getRepositories(query);
     }
 
     private void start() {
         Runtime.getRuntime().addShutdownHook(new Thread(compositeDisposable::dispose));
         githubService = new GithubService(createRetrofit());
-
 
         Observable<String> input = ObservableReader.from(System.in);
 
@@ -43,7 +43,6 @@ public class Application {
         Disposable disposable = input.flatMap(this::getRepositories)
                 .subscribe(System.out::println);
 
-
         compositeDisposable.add(disposable);
     }
 
@@ -51,4 +50,5 @@ public class Application {
         new Application().start();
     }
 
+    //https://en.wikipedia.org/w/api.php?action=query&format=json&list=search&srsearch=
 }

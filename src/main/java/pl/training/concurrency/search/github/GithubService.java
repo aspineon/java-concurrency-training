@@ -13,8 +13,13 @@ public class GithubService {
         githubApi = retrofit.create(GithubApi.class);
     }
 
-    public Observable<List<Repository>> getRepositoriesSummary(String username) {
-        return githubApi.repositories(username);
+    public Observable<List<Repository>> getUserRepositories(String username) {
+        return githubApi.getUserRepositories(username);
+    }
+
+    public Observable<List<Repository>> getRepositories(String query) {
+        return githubApi.getRepositories(query)
+                .map(QueryResult::getItems);
     }
 
 }
