@@ -2,20 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="893ad1c1-5905-4e40-b6fc-3dddabd543de" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/training/concurrency/ex016/TaskWithLock.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/training/concurrency/ex016/TaskWithPhases.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/training/concurrency/search/Application.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/training/concurrency/search/GithubApi.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/training/concurrency/search/GithubService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/training/concurrency/search/Repository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/pl/training/concurrency/ex016/ProducerConsumerTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/pl/training/concurrency/ex016/RxTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/pl/training/concurrency/ex016/TCRunner.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/pl/training/concurrency/ex016/TaskWithLockTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/pl/training/concurrency/ex016/TaskWithPhasesTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/training/concurrency/ex011/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/training/concurrency/ex011/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/training/concurrency/ex009/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/training/concurrency/ex009/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/training/concurrency/ex009/Power.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/training/concurrency/ex009/Multiply.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/training/concurrency/ex015/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/training/concurrency/ex015/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/training/concurrency/ex015/Power.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/training/concurrency/ex015/Multiply.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/training/concurrency/search/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/training/concurrency/search/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/training/concurrency/search/GithubService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/training/concurrency/search/GithubService.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -227,7 +219,7 @@
       <workItem from="1572252125541" duration="20178000" />
       <workItem from="1572329584987" duration="26613000" />
       <workItem from="1572405524288" duration="1000" />
-      <workItem from="1572406472367" duration="13416000" />
+      <workItem from="1572406472367" duration="13828000" />
     </task>
     <task id="LOCAL-00001" summary="Initial project">
       <created>1572252222557</created>
@@ -320,7 +312,14 @@
       <option name="project" value="LOCAL" />
       <updated>1572426076731</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Refactorings">
+      <created>1572435940873</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1572435940873</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

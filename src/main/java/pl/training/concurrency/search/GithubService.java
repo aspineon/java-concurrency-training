@@ -4,11 +4,8 @@ import io.reactivex.Observable;
 import retrofit2.Retrofit;
 
 import java.util.List;
-import java.util.logging.Logger;
 
 public class GithubService {
-
-    private final Logger logger = Logger.getLogger(getClass().getName());
 
     private GithubApi githubApi;
 

@@ -1,15 +1,15 @@
-package pl.training.concurrency.ex009;
+package pl.training.concurrency.ex015;
 
 import java.util.concurrent.Callable;
 
-public class Power implements Callable<Integer> {
+public class Multiply implements Callable<Integer> {
 
     private static final int SLEEP_TIME = 3_000;
 
     private final int firstValue;
     private final int secondValue;
 
-    public Power(int firstValue, int secondValue) {
+    public Multiply(int firstValue, int secondValue) {
         this.firstValue = firstValue;
         this.secondValue = secondValue;
     }

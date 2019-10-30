@@ -21,7 +21,7 @@ public class Application {
                 .buffer(2)
                 .subscribe(System.out::println));
 
-        compositeDisposable.add(Observable.fromCallable(new Power(2, 8))
+        compositeDisposable.add(Observable.fromCallable(new Multiply(2, 8))
                 .subscribe(System.out::println));
 
         Observable<Integer> observable = Observable.create(emitter -> {
