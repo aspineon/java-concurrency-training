@@ -2,9 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="893ad1c1-5905-4e40-b6fc-3dddabd543de" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/training/concurrency/ex015/Application.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/training/concurrency/ex015/Printer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/training/concurrency/ex015/ReportGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/training/concurrency/ex016/Application.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/training/concurrency/ex016/Sum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/training/concurrency/ex017/Application.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/training/concurrency/ex017/ChangePriceTask.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/training/concurrency/ex017/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/training/concurrency/search/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/training/concurrency/search/Application.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -54,18 +61,18 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/test/java/pl/training/concurrency" />
-    <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="pl.training.concurrency.ex016" />
       <recent name="pl.training.concurrency.search" />
       <recent name="pl.training.concurrency.chat.v3" />
       <recent name="pl.training.concurrency.ex015" />
       <recent name="pl.training.concurrency.ex014" />
-      <recent name="pl.training.concurrency.ex012" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/test/java/pl/training/concurrency" />
@@ -87,7 +94,33 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Application">
+  <component name="RunManager" selected="Application.extreme">
+    <configuration name="Application (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="pl.training.concurrency.ex015.Application" />
+      <module name="concurrency" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pl.training.concurrency.ex015.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Application (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="pl.training.concurrency.ex016.Application" />
+      <module name="concurrency" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pl.training.concurrency.ex016.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="pl.training.concurrency.search.Application" />
       <module name="concurrency" />
@@ -123,23 +156,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TCRunner" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="pl.training.concurrency.ex019.TCRunner" />
-      <module name="concurrency" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="pl.training.concurrency.ex019.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Unnamed" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="pl.training.concurrency.chat.v2.ChatClient" />
       <module name="concurrency" />
       <option name="PROGRAM_PARAMETERS" value="localhost 1234 java" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="extreme" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="pl.training.concurrency.ex017.Application" />
+      <module name="concurrency" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pl.training.concurrency.ex017.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -160,55 +193,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RxTest.rxTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="concurrency" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="pl.training.concurrency.ex019.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="pl.training.concurrency.ex019" />
-      <option name="MAIN_CLASS_NAME" value="pl.training.concurrency.ex019.RxTest" />
-      <option name="METHOD_NAME" value="rxTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TaskWithPhasesTest.monitorThreads" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="concurrency" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="pl.training.concurrency.ex019.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="pl.training.concurrency.ex019" />
-      <option name="MAIN_CLASS_NAME" value="pl.training.concurrency.ex019.TaskWithPhasesTest" />
-      <option name="METHOD_NAME" value="monitorThreads" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
       <item itemvalue="Application.Marcin" />
       <item itemvalue="Application.Unnamed" />
       <item itemvalue="Application.Marek" />
-      <item itemvalue="Application.TCRunner" />
       <item itemvalue="Application.Application" />
-      <item itemvalue="JUnit.TaskWithPhasesTest.monitorThreads" />
-      <item itemvalue="JUnit.RxTest.rxTest" />
+      <item itemvalue="Application.Application (1)" />
+      <item itemvalue="Application.Application (2)" />
+      <item itemvalue="Application.extreme" />
       <item itemvalue="JUnit.RxTest.rx2Test" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.extreme" />
+        <item itemvalue="Application.Application (2)" />
+        <item itemvalue="Application.Application (1)" />
         <item itemvalue="Application.Application" />
         <item itemvalue="JUnit.RxTest.rx2Test" />
-        <item itemvalue="JUnit.RxTest.rxTest" />
-        <item itemvalue="Application.TCRunner" />
-        <item itemvalue="JUnit.TaskWithPhasesTest.monitorThreads" />
       </list>
     </recent_temporary>
   </component>
@@ -225,7 +226,8 @@
       <workItem from="1572406472367" duration="26968000" />
       <workItem from="1572495600654" duration="15000" />
       <workItem from="1572496162760" duration="548000" />
-      <workItem from="1572509554468" duration="9790000" />
+      <workItem from="1572509554468" duration="17709000" />
+      <workItem from="1572530965182" duration="2186000" />
     </task>
     <task id="LOCAL-00001" summary="Initial project">
       <created>1572252222557</created>
@@ -360,7 +362,14 @@
       <option name="project" value="LOCAL" />
       <updated>1572513397488</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Refactorings">
+      <created>1572519677748</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1572519677748</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
