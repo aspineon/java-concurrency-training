@@ -1,13 +1,11 @@
-package pl.training.concurrency.ex016;
+package pl.training.concurrency.ex019;
 
 import io.reactivex.Observable;
 import io.reactivex.disposables.Disposable;
 import io.reactivex.observers.TestObserver;
-import io.reactivex.subscribers.TestSubscriber;
 import org.junit.After;
 import org.junit.Test;
 
-import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 

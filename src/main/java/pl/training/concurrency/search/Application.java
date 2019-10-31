@@ -34,46 +34,47 @@ public class Application {
         System.out.println("processing item on thread " + Thread.currentThread().getName());
     }
 
-    private List<String> combine(List<String> firstList, List<String> secondList) {
-        List<String> result = new ArrayList<>();
-        result.addAll(firstList);
-        result.addAll(secondList);
+    private List<String> combine(List<String> result,String value) {
+        result.add(value);
         return result;
     }
 
-    private void start() throws InterruptedException {
-        Runtime.getRuntime().addShutdownHook(new Thread(compositeDisposable::dispose));
-
-        Observable<String> input = ObservableReader.from(System.in)
-                .subscribeOn(Schedulers.io())
-                .share();
-
-        Observable<List<Repository>> repositories = input.flatMap(query -> githubService.getRepositories(query));
-        Observable<List<Article>> articles = input.flatMap(query -> wikipediaService.getArticles(query));
-
-        Observable<String> repositoriesNames = repositories
-                .subscribeOn(Schedulers.io())
-                .flatMap(Observable::fromIterable)
-                .map(Repository::getName);
-
-        Observable<String> articlesNames = articles
-                .subscribeOn(Schedulers.io())
-                .flatMap(Observable::fromIterable)
-                .map(Article::getTitle);
-
-        Observable<List<String>> results = Observable.combineLatest(repositoriesNames, articlesNames, List::of)
-                .doOnNext(this::showThreadInfo)
-                .take(5)
-                .reduce(new ArrayList<>(), this::combine)
-                .observeOn(Schedulers.io())
-                .toObservable();
-
-        compositeDisposable.add(results.subscribe(System.out::println));
-
-        Thread.sleep(100_000);
+    private boolean hasWhiteSpaces(String text) {
+        return text.matches(".*\\s+.*");
     }
 
-    public static void main(String[] args) throws InterruptedException {
+    private void sendQuery(String query) {
+        Observable<List<Repository>> repositories = githubService.getRepositories(query)
+                .subscribeOn(Schedulers.io());
+        Observable<List<Article>> articles = wikipediaService.getArticles(query)
+                .subscribeOn(Schedulers.io());
+
+        Observable<String> repositoriesNames = repositories.flatMap(Observable::fromIterable)
+                .map(Repository::getName)
+                .observeOn(Schedulers.newThread());
+
+        Observable<String> articlesNames = articles.flatMap(Observable::fromIterable)
+                .map(Article::getTitle)
+                .observeOn(Schedulers.newThread());
+
+        Observable<List<String>> namePairs=  Observable.zip(repositoriesNames, articlesNames, List::of)
+                .flatMap(Observable::fromIterable)
+                .map(String::toLowerCase)
+                .filter(this::hasWhiteSpaces)
+                .distinct()
+                .reduce(new ArrayList<>(), this::combine)
+                .toObservable();
+
+        compositeDisposable.add(namePairs.subscribe(System.out::println, System.out::println, () -> System.out.println("Completed")));
+
+    }
+
+    private void start() {
+        Runtime.getRuntime().addShutdownHook(new Thread(compositeDisposable::dispose));
+        compositeDisposable.add(ObservableReader.from(System.in).subscribe(this::sendQuery));
+    }
+
+    public static void main(String[] args) {
         new Application().start();
     }
 

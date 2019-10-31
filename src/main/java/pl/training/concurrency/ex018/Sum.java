@@ -1,4 +1,4 @@
-package pl.training.concurrency.ex015;
+package pl.training.concurrency.ex018;
 
 public class Sum implements Runnable {
 

@@ -1,4 +1,4 @@
-package pl.training.concurrency.ex016;
+package pl.training.concurrency.ex019;
 
 import edu.umd.cs.mtc.TestFramework;
 
