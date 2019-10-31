@@ -3,17 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="893ad1c1-5905-4e40-b6fc-3dddabd543de" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/training/concurrency/ex015/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/training/concurrency/ex018/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/training/concurrency/ex015/Multiply.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/training/concurrency/ex018/Multiply.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/training/concurrency/ex015/Sum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/training/concurrency/ex018/Sum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/training/concurrency/ex016/TaskWithLock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/training/concurrency/ex019/TaskWithLock.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/training/concurrency/ex016/TaskWithPhases.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/training/concurrency/ex019/TaskWithPhases.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pl/training/concurrency/search/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/training/concurrency/search/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pl/training/concurrency/ex016/ProducerConsumerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pl/training/concurrency/ex019/ProducerConsumerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pl/training/concurrency/ex016/RxTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pl/training/concurrency/ex019/RxTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pl/training/concurrency/ex016/TCRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pl/training/concurrency/ex019/TCRunner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pl/training/concurrency/ex016/TaskWithLockTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pl/training/concurrency/ex019/TaskWithLockTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pl/training/concurrency/ex016/TaskWithPhasesTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pl/training/concurrency/ex019/TaskWithPhasesTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -234,7 +225,7 @@
       <workItem from="1572406472367" duration="26968000" />
       <workItem from="1572495600654" duration="15000" />
       <workItem from="1572496162760" duration="548000" />
-      <workItem from="1572509554468" duration="3806000" />
+      <workItem from="1572509554468" duration="9790000" />
     </task>
     <task id="LOCAL-00001" summary="Initial project">
       <created>1572252222557</created>
@@ -362,7 +353,14 @@
       <option name="project" value="LOCAL" />
       <updated>1572451252753</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Refactorings">
+      <created>1572513397488</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1572513397488</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

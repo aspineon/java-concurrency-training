@@ -5,6 +5,10 @@ import io.reactivex.Single;
 import io.reactivex.disposables.CompositeDisposable;
 import io.reactivex.disposables.Disposable;
 import io.reactivex.schedulers.Schedulers;
+import io.reactivex.subjects.PublishSubject;
+import okhttp3.OkHttpClient;
+import okhttp3.logging.HttpLoggingInterceptor;
+import okhttp3.logging.HttpLoggingInterceptor.Level;
 import pl.training.concurrency.search.github.GithubService;
 import pl.training.concurrency.search.github.Repository;
 import pl.training.concurrency.search.wikipedia.Article;
@@ -15,18 +19,21 @@ import retrofit2.converter.jackson.JacksonConverterFactory;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
+import java.util.concurrent.TimeUnit;
 
 public class Application {
 
-    private GithubService githubService = new GithubService(retrofitBuilder("https://api.github.com/"));
-    private WikipediaService wikipediaService = new WikipediaService(retrofitBuilder("https://en.wikipedia.org/w/"));
-    private CompositeDisposable compositeDisposable = new CompositeDisposable();
+    private final GithubService githubService = new GithubService(retrofitBuilder("https://api.github.com/"));
+    private final WikipediaService wikipediaService = new WikipediaService(retrofitBuilder("https://en.wikipedia.org/w/"));
+    private final CompositeDisposable compositeDisposable = new CompositeDisposable();
 
     private Retrofit retrofitBuilder(String url) {
         return new Retrofit.Builder()
                 .baseUrl(url)
                 .addConverterFactory(JacksonConverterFactory.create())
                 .addCallAdapterFactory(RxJava2CallAdapterFactory.create())
+                .client(new OkHttpClient.Builder().addInterceptor(new HttpLoggingInterceptor().setLevel(Level.BASIC)).build())
                 .build();
     }
 
@@ -34,7 +41,7 @@ public class Application {
         System.out.println("processing item on thread " + Thread.currentThread().getName());
     }
 
-    private List<String> combine(List<String> result,String value) {
+    private List<String> combine(List<String> result, String value) {
         result.add(value);
         return result;
     }
@@ -57,7 +64,7 @@ public class Application {
                 .map(Article::getTitle)
                 .observeOn(Schedulers.newThread());
 
-        Observable<List<String>> namePairs=  Observable.zip(repositoriesNames, articlesNames, List::of)
+        Observable<List<String>> namePairs = Observable.zip(repositoriesNames, articlesNames, List::of)
                 .flatMap(Observable::fromIterable)
                 .map(String::toLowerCase)
                 .filter(this::hasWhiteSpaces)
@@ -66,15 +73,66 @@ public class Application {
                 .toObservable();
 
         compositeDisposable.add(namePairs.subscribe(System.out::println, System.out::println, () -> System.out.println("Completed")));
-
     }
 
-    private void start() {
+    private Observable<List<Article>> getRepositories(String query) {
+        Observable<List<Article>> articles = githubService.getRepositories(query)
+                .flatMap(Observable::fromIterable)
+                .firstElement()
+                .toObservable()
+                .map(Repository::getName)
+                .flatMap(name -> wikipediaService.getArticles(query))
+                .share();
+
+        compositeDisposable.add(articles.subscribeOn(Schedulers.io()).subscribe(System.out::println));
+        return articles;
+    }
+
+    private void errors() {
+        Observable<Integer> numbers = Observable.just(0, 1, 2)
+                .subscribeOn(Schedulers.io())
+                .map(result -> 1 / result)
+                //.onErrorReturn(throwable -> -1)
+                //.onErrorReturnItem(-2)
+                // .onErrorReturnItem(-1)
+                .retry(3)
+                .share();
+
+        compositeDisposable.add(numbers.subscribe(System.out::println, System.err::println, () -> System.out.println("Completed")));
+        compositeDisposable.add(numbers.subscribe(System.out::println, System.err::println, () -> System.out.println("Completed")));
+    }
+
+    private Observable<Long> safeStream() {
+        Random random = new Random();
+        PublishSubject<Long> publishSubject = PublishSubject.create();
+
+        Observable<Long> ticks = Observable.interval(5, TimeUnit.SECONDS);
+        compositeDisposable.add(ticks.subscribe((value) -> {
+            Observable<Boolean> numbers = Observable.just(random.nextBoolean());
+            compositeDisposable.add(numbers.map(lucky -> {
+                if (lucky) {
+                    return 5L;
+                }
+                throw new IllegalArgumentException();
+            }).subscribe(publishSubject::onNext, error -> publishSubject.onNext(-1L), () -> System.out.println("Completed")));
+        }));
+        return publishSubject;
+    }
+
+    private void start() throws InterruptedException {
         Runtime.getRuntime().addShutdownHook(new Thread(compositeDisposable::dispose));
-        compositeDisposable.add(ObservableReader.from(System.in).subscribe(this::sendQuery));
+        //compositeDisposable.add(ObservableReader.from(System.in).subscribe(this::sendQuery));
+
+        //Observable<List<Article>> articles = getRepositories("java").subscribeOn(Schedulers.io());
+        //compositeDisposable.add(articles.subscribe(System.out::println));
+
+        //errors();
+
+        compositeDisposable.add(safeStream().subscribe(System.out::println));
+        Thread.sleep(100_000);
     }
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
         new Application().start();
     }
 
