@@ -2,18 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="893ad1c1-5905-4e40-b6fc-3dddabd543de" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/training/concurrency/ex015/Application.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/training/concurrency/ex015/Printer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/training/concurrency/ex015/ReportGenerator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/training/concurrency/ex016/Application.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/training/concurrency/ex016/Sum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/training/concurrency/ex017/Application.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/training/concurrency/ex017/ChangePriceTask.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/training/concurrency/ex017/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Programowanie wielowątkowe w Javie.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/training/concurrency/ex020/Application.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/training/concurrency/ex020/Date.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/training/concurrency/ex020/Worker.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/training/concurrency/ex021/Application.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/training/concurrency/ex021/OtherTask.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/training/concurrency/ex021/Task.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/training/concurrency/ex021/Worker.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/training/concurrency/ex022/AddTask.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/training/concurrency/ex022/ConcurrentHashMapExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/training/concurrency/ex022/ConcurrentLinkDequeExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/training/concurrency/ex022/DelayQueueExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/training/concurrency/ex022/Event.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/training/concurrency/ex022/LinkedBlockingDequeExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/training/concurrency/ex022/NavigableCollectionsExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/training/concurrency/ex022/PoolTask.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/training/concurrency/ex022/PriorityBlockingQueueExample.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -50,6 +58,11 @@
   </component>
   <component name="ProjectId" id="1SpEQyDxFsSxpFyeYzeOqQtvNfB" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="true" />
@@ -60,47 +73,35 @@
     <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="extract.method.default.visibility" value="private" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/test/java/pl/training/concurrency" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="pl.training.concurrency.ex022" />
       <recent name="pl.training.concurrency.ex016" />
       <recent name="pl.training.concurrency.search" />
       <recent name="pl.training.concurrency.chat.v3" />
       <recent name="pl.training.concurrency.ex015" />
-      <recent name="pl.training.concurrency.ex014" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/src/test/java/pl/training/concurrency" />
       <recent name="$PROJECT_DIR$/src/main/java/pl/training/concurrency/chat/v2" />
       <recent name="$PROJECT_DIR$/src/main/java/pl/training/concurrency/chat/v1" />
       <recent name="$PROJECT_DIR$/src/main/java/pl/training/concurrency/ex005" />
-      <recent name="$PROJECT_DIR$/src/main/java/pl/training/concurrency/ex004" />
     </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
-  <component name="RunManager" selected="Application.extreme">
-    <configuration name="Application (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="pl.training.concurrency.ex015.Application" />
-      <module name="concurrency" />
+  <component name="RunManager" selected="Application.DelayQueueExample">
+    <configuration name="ConcurrentHashMapExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="pl.training.concurrency.ex022.ConcurrentHashMapExample" />
+      <module name="java-concurrency-training" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="pl.training.concurrency.ex015.*" />
+          <option name="PATTERN" value="pl.training.concurrency.ex022.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -108,12 +109,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Application (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="pl.training.concurrency.ex016.Application" />
-      <module name="concurrency" />
+    <configuration name="ConcurrentLinkDequeExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="pl.training.concurrency.ex022.ConcurrentLinkDequeExample" />
+      <module name="java-concurrency-training" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="pl.training.concurrency.ex016.*" />
+          <option name="PATTERN" value="pl.training.concurrency.ex022.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -121,12 +122,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="pl.training.concurrency.search.Application" />
-      <module name="concurrency" />
+    <configuration name="DelayQueueExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="pl.training.concurrency.ex022.DelayQueueExample" />
+      <module name="java-concurrency-training" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="pl.training.concurrency.search.github.*" />
+          <option name="PATTERN" value="pl.training.concurrency.ex022.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LinkedBlockingDequeExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="pl.training.concurrency.ex022.LinkedBlockingDequeExample" />
+      <module name="java-concurrency-training" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pl.training.concurrency.ex022.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -156,6 +170,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="PriorityBlockingQueueExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="pl.training.concurrency.ex022.PriorityBlockingQueueExample" />
+      <module name="java-concurrency-training" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pl.training.concurrency.ex022.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Unnamed" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="pl.training.concurrency.chat.v2.ChatClient" />
       <module name="concurrency" />
@@ -164,54 +191,37 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="extreme" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="pl.training.concurrency.ex017.Application" />
-      <module name="concurrency" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="pl.training.concurrency.ex017.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="RxTest.rx2Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="concurrency" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="pl.training.concurrency.ex019.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="pl.training.concurrency.ex019" />
-      <option name="MAIN_CLASS_NAME" value="pl.training.concurrency.ex019.RxTest" />
-      <option name="METHOD_NAME" value="rx2Test" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
       <item itemvalue="Application.Marcin" />
       <item itemvalue="Application.Unnamed" />
       <item itemvalue="Application.Marek" />
-      <item itemvalue="Application.Application" />
-      <item itemvalue="Application.Application (1)" />
-      <item itemvalue="Application.Application (2)" />
-      <item itemvalue="Application.extreme" />
-      <item itemvalue="JUnit.RxTest.rx2Test" />
+      <item itemvalue="Application.ConcurrentHashMapExample" />
+      <item itemvalue="Application.ConcurrentLinkDequeExample" />
+      <item itemvalue="Application.LinkedBlockingDequeExample" />
+      <item itemvalue="Application.PriorityBlockingQueueExample" />
+      <item itemvalue="Application.DelayQueueExample" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.extreme" />
-        <item itemvalue="Application.Application (2)" />
-        <item itemvalue="Application.Application (1)" />
-        <item itemvalue="Application.Application" />
-        <item itemvalue="JUnit.RxTest.rx2Test" />
+        <item itemvalue="Application.DelayQueueExample" />
+        <item itemvalue="Application.PriorityBlockingQueueExample" />
+        <item itemvalue="Application.LinkedBlockingDequeExample" />
+        <item itemvalue="Application.ConcurrentLinkDequeExample" />
+        <item itemvalue="Application.ConcurrentHashMapExample" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -228,6 +238,7 @@
       <workItem from="1572496162760" duration="548000" />
       <workItem from="1572509554468" duration="17709000" />
       <workItem from="1572530965182" duration="2186000" />
+      <workItem from="1579509988994" duration="11600000" />
     </task>
     <task id="LOCAL-00001" summary="Initial project">
       <created>1572252222557</created>
@@ -392,5 +403,39 @@
     <MESSAGE value="Initial project" />
     <MESSAGE value="Refactorings" />
     <option name="LAST_COMMIT_MESSAGE" value="Refactorings" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="641" y="62" key="#com.intellij.ide.util.MemberChooser" timestamp="1579527397494">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="641" y="62" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1080@0.0.1920.1080" timestamp="1579527397494" />
+    <state x="632" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1579527444982">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="632" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1579527444982" />
+    <state width="1870" height="135" key="GridCell.Tab.0.bottom" timestamp="1579533433805">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1870" height="135" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1579533433805" />
+    <state width="1870" height="135" key="GridCell.Tab.0.center" timestamp="1579533433803">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1870" height="135" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1579533433803" />
+    <state width="1870" height="135" key="GridCell.Tab.0.left" timestamp="1579533433802">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1870" height="135" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1579533433802" />
+    <state width="1870" height="135" key="GridCell.Tab.0.right" timestamp="1579533433804">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1870" height="135" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1579533433804" />
+    <state x="229" y="0" key="SettingsEditor" timestamp="1579523032453">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="229" y="0" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1579523032453" />
+    <state x="541" y="48" key="search.everywhere.popup" timestamp="1579525033338">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="541" y="48" key="search.everywhere.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1579525033338" />
   </component>
 </project>
